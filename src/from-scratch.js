@@ -11,7 +11,7 @@ const measureRain = (inches) => {
     console.log('rainy')
   }
 };
-
+/** FEEDBACK: Great job! Love that you are using nesting conditional statements as it shows a deep understanding of concepts and a sense of organization/pattern recognition however I do want to note that we typically do not want nested conditions as it makes it a little harder to read. */
 const happyBirthdayPet = (breed, age) => {
   if(breed === 'snake'){
      console.log('Hiss hiss!')
@@ -66,6 +66,7 @@ const rounder = (float, roundingSetting) => {
 };
 console.log(rounder(7.9,'honest'))
 const fizzBuzzish = (num) => {
+  /** FEEDBACK: Make sure to add spaces to make your code more readable like in between num and the %! */
   if( num%3===0 && num%5===0){
       console.log('fizzBuzz!')
   } else if(num%3===0) {

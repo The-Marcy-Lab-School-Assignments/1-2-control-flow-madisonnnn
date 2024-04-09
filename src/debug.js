@@ -2,11 +2,11 @@ const getRandomIntInRange = (min, max) => {
   if (min > max) throw new Error('min must be less than max');
   return Math.floor(Math.random()* (max - min) + min);
 };
-
+/** FEEDBACK: Yes to this ternary! */
 const coolnessGauge = (numOfFridges) => {
   return numOfFridges <= 3 ? 'You need more fridges.' : 'You are downright chilly!';
 };
-
+/** FEEDBACK: Great job! Just make sure you are cleaning up your files by removing any extra spaces. */
 const funkoPopAddictionLevel = (numOfFunkoPops) => {
 
   if(numOfFunkoPops <= 30 && numOfFunkoPops > 20) {
@@ -41,7 +41,12 @@ const getWeatherReport = (temperature) => {
   console.log("And that's your report!");
   return weatherReport;
 };
-
+/** FEEDBACK: Great use of conditionals here, you could've also used a ternary here. Your code would then look like this: 
+const returnPositiveNegativeZero = (num) => {
+  if (num === 0) return 'Zero';
+  return (num < 1) ? 'Negative' : 'Positive';
+};
+ */
 const returnPositiveNegativeZero = (num) => {
   if (num === 0){
     return 'Zero'
